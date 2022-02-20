@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Prueba_Emqu_joseSilva</string>
+    <!--view login-->
+    <string name="tv_login">Log in</string>
+    <string name="msj_permiso">El permiso de almacenamiento es necesario para usar esta aplicación</string>
+    <string name="title_dialog">Alerta con el permiso</string>
+    <string name="msj_intent_imagen">Seleccione la aplicacion </string>
+    <string name="imgb_avatar">Boton para seleccionar avatar</string>
+    <string name="tv_seleccionar_avatar">Seleccione avatar a utilizar</string>
+    <string name="til_user">Usuario</string>
+    <string name="til_password">Contraseña</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="toast_dat_invalidos">El usuario o contraseña ingresado es incorrecto.</string>
+    <string name="toast_vacio">Debe llenar todos los campos.</string>
+    <!--fin-->
+    <!--view principal-->
+    <string name="toast_avatarvacio">Debe seleccionar un avatar</string>
+    <string name="btn_lunes">Lunes</string>
+    <string name="btn_martes">Martes</string>
+    <string name="btn_miercoles">Miercoles</string>
+    <string name="btn_jueves">Jueves</string>
+    <string name="btn_viernes">Viernes</string>
+    <string name="btn_sabado">Sabado</string>
+    <string name="btn_domingo">Domingo</string>
+    <string name="mensaje_fecha">%1$s, %2$d de %3$s de %4$d</string>
+    <string name="mensaje_user">Bienvenido, Admin</string>
+    <!--fin-->
+</resources>

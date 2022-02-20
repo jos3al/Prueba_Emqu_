@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_prin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Principal_view">
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/linechart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fecha" />
+
+    <TextView
+        android:id="@+id/tv_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user" />
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/mensaje_user"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_lun"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/secondary_text_dark_nodisable"
+        android:clickable="true"
+        android:text="@string/btn_lunes"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linechart" />
+
+    <Button
+        android:id="@+id/btn_mar"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@android:color/secondary_text_dark_nodisable"
+        android:clickable="true"
+        android:text="@string/btn_martes"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_lun"
+        app:layout_constraintEnd_toStartOf="@+id/btn_mier"
+        app:layout_constraintStart_toEndOf="@+id/btn_lun"
+        app:layout_constraintTop_toTopOf="@+id/btn_lun" />
+
+    <Button
+        android:id="@+id/btn_mier"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/secondary_text_dark_nodisable"
+        android:clickable="true"
+        android:text="@string/btn_miercoles"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_mar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_mar" />
+
+    <Button
+        android:id="@+id/btn_jue"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/secondary_text_dark_nodisable"
+        android:clickable="true"
+        android:text="@string/btn_jueves"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_lun"
+        app:layout_constraintStart_toStartOf="@+id/btn_lun"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lun" />
+
+    <Button
+        android:id="@+id/btn_vier"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/secondary_text_dark_nodisable"
+        android:clickable="true"
+        android:text="@string/btn_viernes"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mar"
+        app:layout_constraintStart_toStartOf="@+id/btn_mar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mar" />
+
+    <Button
+        android:id="@+id/btn_sab"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/secondary_text_dark_nodisable"
+        android:clickable="true"
+        android:text="@string/btn_sabado"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mier"
+        app:layout_constraintStart_toStartOf="@+id/btn_mier"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mier" />
+
+    <Button
+        android:id="@+id/btn_dom"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/secondary_text_dark_nodisable"
+        android:clickable="true"
+        android:text="@string/btn_domingo"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_vier"
+        app:layout_constraintStart_toStartOf="@+id/btn_vier"
+        app:layout_constraintTop_toBottomOf="@+id/btn_vier" />
+
+    <ImageView
+        android:id="@+id/imgv_ad"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/b1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
